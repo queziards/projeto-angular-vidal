@@ -46,5 +46,3 @@ button, a {
     height: auto; /* Mantém a proporção da imagem */
   }
   
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

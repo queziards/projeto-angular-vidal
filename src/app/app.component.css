@@ -1,0 +1,131 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar { /*categorias, oferta do dia etc*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuap{ /*categoria*/
+  font-size: 16px;
+}
+
+.logo {
+  margin-right: 25px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.search-bar { /*caixa de pesquisar*/
+  margin-top: 20px;
+  width: 50%;
+  max-width: 600px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.header-green {
+  background-color: #84a98c; /* Cor verde do Material Design */
+  color: white; /* Cor do texto para contraste */
+}
+
+mat-menu {
+  font-size: 14px;
+}
+button, a {
+  margin-left: 10px;
+  color: rgb(10, 10, 10);
+}
+.image-container {
+  text-align: center; /* Centraliza a imagem */
+  margin: 20px 0; /* Adiciona espaço acima e abaixo da imagem */
+}
+
+.responsive-image {
+  max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+
+.picsum-img-wrapper {
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.picsum-img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+/* app.component.css */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 16px; /* Espaçamento entre itens */
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 20%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #84a98c;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  color: white;
+  text-decoration: none;
+}
+
+mat-toolbar a:hover {
+  text-decoration: underline;
+}
+
+mat-icon {
+  font-size: 24px;
+}
