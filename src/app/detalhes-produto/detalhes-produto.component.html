@@ -1,0 +1,35 @@
+
+<div class="detalhes-container">
+    <!-- Spinner ou mensagem de carregamento -->
+    <div *ngIf="isLoading">
+      <p>Carregando detalhes do produto...</p>
+      <mat-spinner></mat-spinner>
+    </div>
+  
+    <!-- Mensagem de erro -->
+    <div *ngIf="!isLoading && errorMessage">
+      <p>{{ errorMessage }}</p>
+      <button mat-button color="primary" (click)="voltar()">Voltar para lista</button>
+    </div>
+    <!-- Detalhes do produto -->
+    <div *ngIf="!isLoading && produtoDetalhes">
+      <h1>Detalhes do Produto</h1>
+  
+      <!-- Exemplo de exibição de propriedades do produto -->
+      <div class="produto-info">
+        <img *ngIf="produtoDetalhes.imagemUrl" [src]="produtoDetalhes.imagemUrl" [alt]="produtoDetalhes.nome" class="produto-imagem" />
+  
+        <div class="produto-texto">
+          <p><strong>Nome:</strong> {{ produtoDetalhes.nome}}</p>
+          <p><strong>Preço:</strong> {{ produtoDetalhes.preco | currency:'BRL' }}</p>
+          <p><strong>Descrição:</strong> {{ produtoDetalhes.descricao }}</p>
+          <p><strong>Imagem:</strong> {{ produtoDetalhes.position }}</p>
+          <p><strong>Quantidade:</strong> {{ produtoDetalhes.qtde }}</p>
+        </div>
+      </div>
+  
+      <!-- Botão para voltar à lista -->
+      <button class= "button" mat-button color="primary" (click)="voltar()">Voltar para lista</button>
+    </div>
+  </div>
+  
