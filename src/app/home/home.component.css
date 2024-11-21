@@ -1,0 +1,94 @@
+
+ .picsum-img-wrapper img { /**carrodssel*/
+    width: 100%;
+    height: auto;
+  }
+  
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+ /*container*/ 
+ .container{
+  margin: 10px;
+  position: unset;
+  margin-left: 10px;
+  margin-right: 40px;
+  background-color: #ddd;
+ }
+.content-container {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+ 
+}
+/*grid*/
+
+
+.container-all {
+ margin: 0 auto;
+ background: linear-gradient(to right, #84a98c, #354f52);
+ width: 100%;
+ padding-left: 20px; /* Ajuste o valor conforme necessário */
+ padding-right: 100px; /* Ajuste o valor conforme necessário */
+ box-sizing: border-box; /* Garante que o padding seja incluído no cálculo do tamanho */
+
+}
+.grid-item{
+  margin-left: 10px; /* Espaço à esquerda */
+  margin-right: 10px;
+  margin: 0px; /* Adiciona espaçamento entre os itens da grid */
+  border: 1px solid #ddd; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+}
+
+.img-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+  /*margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.text-container {
+
+ margin-top: 10px;
+}
+
+mat-card-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+mat-card-subtitle {
+  font-size: 14px;
+  color: gray;
+   margin-top: 5px; /* Espaço entre o título e o subtítulo */
+}
+
+mat-grid-list{
+  margin: 10px;
+  position: unset;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+

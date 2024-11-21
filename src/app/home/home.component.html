@@ -1,0 +1,58 @@
+
+<div class="content-container">
+
+ <div class="carousel-container">
+  <ngb-carousel *ngIf="images">
+       <ng-template ngbSlide *ngFor="let img of images; let i = index">
+         <div class="picsum-img-wrapper">
+           <img [src]="img" alt="Random slide {{ i }}">
+         </div>
+       </ng-template>
+     </ngb-carousel>
+ </div> <br>
+
+ <!---------------------------------fim do carrosel---------------------------------->
+ <div class="container-all">
+ <h2 style="margin-top: 10px;">Novidades</h2>
+ <!--<div class="grid-container">-->
+
+ <mat-grid-list cols="4" gutterSize="10px" rowHeight="2:2">
+  
+  <mat-grid-tile class="grid-item">
+    <div>
+     <img mat-card-image src="../../assets/volta-aulas.png" alt="Descrição da imagem" class="img-img">
+     
+    </div>   
+    </mat-grid-tile>
+   
+    <!-----segunda coluna-->
+    <mat-grid-tile class="grid-item">
+      <div>
+       <img mat-card-image src="../../assets/casa.png" alt="Descrição da imagem" class="img-img">
+      </div>     
+    </mat-grid-tile>
+    <!-----terceira coluna-->
+    <mat-grid-tile class="grid-item">
+      <div>
+         <img mat-card-image src="../../assets/perfume.png" alt="Descrição da imagem" class="img-img">
+      </div>
+        
+      </mat-grid-tile>
+    <!-----quarta coluna-->
+       <mat-grid-tile class="grid-item">
+         <div>
+           <img mat-card-image src="../../assets/guarda-chuva.png" alt="Descrição da imagem" class="img-img">
+        </div>
+       </mat-grid-tile>
+  </mat-grid-list>
+
+
+ </div>
+</div><br>
+<!---fim -->
+
+
+
+
+
+ <app-exibicao-home></app-exibicao-home>
