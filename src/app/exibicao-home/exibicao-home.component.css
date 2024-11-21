@@ -1,0 +1,184 @@
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 40px; 
+    padding: 10px; 
+    margin-bottom: 30px;
+    
+}
+
+.text-container { /*caixa verde */
+    flex:1;
+    margin: 0 0px;
+    padding: 20px; /* Padding interno */
+   /* background-color: #b4eed0; /* Cor de fundo opcional */
+    border-radius: 5px; /* Bordas arredondadas opcional */
+    top: 50%;
+   font-weight: bold;
+}
+
+.text-container1 {/*caixa verde */
+    flex:1;
+    border: 0px solid #ccc; /* Borda opcional */
+    padding: 20px; /* Padding interno */
+    border-radius: 5px; /* Bordas arredondadas opcional */
+    font-weight: bold;
+    margin-left: 5px;
+  
+}
+
+.container-all {
+    margin: 0 auto;
+    background: linear-gradient(to right, #cad2c5, #52796f);
+    width: 100%;
+    padding-left: 20px; /* Ajuste o valor conforme necessário */
+    padding-right: 20px; /* Ajuste o valor conforme necessário */
+    box-sizing: border-box; /* Garante que o padding seja incluído no cálculo do tamanho */
+    height: 85px;
+    margin-top: -20px;
+}
+
+mat-card-title{
+    font-size: 17px;
+    margin-top: -50%;
+    
+}
+
+/*************text*******************/
+
+.slider-wrap{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+.slider-main{
+    position: absolute;
+    width: 200%;
+}
+.item{
+    display: inline-block;
+    width: 190px;
+    height: 200px;
+    background-color: rgb(245, 157, 237);
+    position: relative;
+    margin: 0 12px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2{
+    margin-left: 20px;
+}
+
+
+/*css do carrosel --------------------------*/
+.carousel-container2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+ 
+}
+  
+.product-carousel { /*minha coluna*/
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center
+}
+  
+.product-item {
+    flex: 0 0 150px; /**dixa colunas iguais*/
+    min-width: 200px; /* Reduz o tamanho mínimo do item * 150px/
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Borda arredondada */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.product-item img {
+    width: 150px; /* Ajuste o tamanho da imagem aqui */
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 8px; /* Borda arredondada para a imagem */
+
+}
+  
+.product-info {
+    padding: 2px 0;
+}
+.price {
+    color: #007bff; /* Azul */
+    font-weight: bold; /* Negrito */
+}
+  
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+  
+button.prev {
+    left: 10%;
+}
+  
+button.next {
+    right: 10%; /*10p*/
+}
+  
+
+
+/*responsivo*/
+
+@media (max-width: 1200px) {
+    .flex-container, .container-all, .carousel-container2 {
+        grid-template-columns: repeat(4, 1fr); /* 3 colunas */
+        gap: 30px;
+    }
+}
+
+/* Ajustes para telas menores que 900px (tablets) */
+@media (max-width: 900px) {
+    .flex-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        gap: 20px;
+    }
+}
+
+/* Ajustes para telas menores que 600px (smartphones) */
+@media (max-width: 600px) {
+    .flex-container {
+        grid-template-columns: 1fr; /* 1 coluna */
+        gap: 15px;
+    }
+
+    .text-container, .text-container1 {
+        margin: 0 0 20px 0;
+        width: 100%;
+         /* Espaçamento vertical em vez de horizontal */
+    }
+}
+
+

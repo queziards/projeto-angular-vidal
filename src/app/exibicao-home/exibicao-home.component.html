@@ -1,0 +1,41 @@
+
+<div class="container-all">
+ <div class="flex-container">
+  <div class="text-container1">
+      <mat-card-title>Ofertas Volta aulas!</mat-card-title><br>
+      <!--<mat-card-subtitle>Itens para escola</mat-card-subtitle>--->
+  </div>
+  <div class="text-container">
+      <mat-card-title>Veja Ofertas de decoração para sua Casa</mat-card-title>
+      <!--<mat-card-subtitle>Itens para sua casa</mat-card-subtitle>-->
+  </div>
+  <div class="text-container">
+      <mat-card-title>Perfumes por até R$400</mat-card-title><br>
+  </div>
+  <div class="text-container">
+      <mat-card-title>Itens para você</mat-card-title><br>
+      <!--<mat-card-subtitle>Guarda chuva</mat-card-subtitle>--->
+  </div>
+ </div>
+</div>
+<!------------carrosel de imagens -------------->
+<div class="container-carrosel">
+  <h2 style="margin-top: 30px;">Produtos que você pode gostar</h2>
+  <div class="carousel-container2">
+  <button type="button" class="prev" (click)="prev()">&#10094;</button>
+  <div class="product-carousel" #carousel>
+    <div *ngFor="let product of visibleProducts" class="product-item"
+    (click)="showProducts(product.id)">
+      <img [src]="product.image" alt="{{ product.description }}">
+      <div class="product-info">
+        <p>{{ product.description }}</p>      
+        <p class="price">{{ product.price | currency:'BRL' }}</p>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="next" (click)="next()">&#10095;</button>
+ </div>
+</div>
+<!------------------fim do carrosel de imagens--------------------------------------->
+
+
