@@ -1,13 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <li>bem vindo a pagina de login</li>
-    </nav>
-</body>
-</html>
+<div class="container">
+ <div class="first-form">
+     <form class="form-group">
+      <h2>Tenho cadastro</h2>
+         <label for="email">E-mail*</label>
+         <input type="email" id="email" class="form-control"  required>
+    
+         <div class="form-group">
+           <label for="senha">Senha*</label>
+           <input type="password" id="senha" class="form-control" required>
+          </div>
+         <div class="form-group">
+          <a routerLink="recuperar-senha">Esqueci a senha</a>
+          <button (click)="loginUser()" class="btn btn-success" type="submit">Entrar</button>
+        </div>
+      </form>
+  </div>
+  <div class="divider">
+  </div> 
+ <!--------------------------------->
+    <div class="second-form">
+       <form class="form-group">
+        <h2>Quero me cadastrar</h2>
+           <label for="email">Nome Completo*</label>
+           <input type="text" id="email" class="form-control"  required>
+      
+           <div class="form-group">
+             <label for="senha">Email*</label>
+             <input type="text" id="senha" class="form-control"  required>
+           </div>
+
+           <div class="form-group">
+            <label for="senha">Endereço*</label>
+            <input type="text" id="senha" class="form-control"  required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Estado*</label>
+            <input type="text" id="senha" class="form-control"  required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Telefone*</label>
+            <input type="tel" id="senha" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha*</label>
+            <input type="password" id="senha" class="form-control"  required>
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" >Mantenha-me conectado<br>
+            <input type="checkbox" >Aceito receber novidades do Ecommerce por e-mail
+            <button (click)="loginUser()"  class="btn btn-success" type="submit">Entrar</button>
+          </div> 
+           <div class="form-group">
+              <button (click)="loginUser()" class="btn btn-success" type="submit">Entrar</button>
+          </div>
+        </form>
+    </div>
+</div>
+ <!--<div class="d-flex justify-content-center align-items-end">
+-->
+ 
+<!--routerLink="forget"-->
