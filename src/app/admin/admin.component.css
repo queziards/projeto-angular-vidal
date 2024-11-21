@@ -1,0 +1,33 @@
+/* Estiliza o formulário */
+form {
+    max-width: 500px;         /* Define a largura máxima do formulário */
+    margin: 0 auto;           /* Centraliza o formulário na página */
+    padding: 25px;            /* Espaçamento interno */
+    border-radius: 10px;      /* Cantos arredondados */
+    background-color: #f9f9f9; /* Fundo claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+  }
+  
+  /* Estiliza cada campo do formulário com espaçamento */
+  .mat-form-field {
+    width: 100%;              /* O campo ocupa toda a largura disponível */
+    margin-bottom: 70px;      /* Espaçamento entre os campos (24px de distância) */
+  }
+  
+  /* Personaliza o botão */
+  button[type="submit"] {
+    width: 100%;              /* O botão ocupa toda a largura */
+    padding: 10px;            /* Espaço dentro do botão */
+    font-size: 16px;          /* Tamanho do texto */
+    background-color: #84a98c; /* Cor de fundo azul */
+    color: white;             /* Texto branco */
+    border: none;             /* Remove a borda padrão */
+    border-radius: 5px;       /* Cantos arredondados */
+    cursor: pointer;          /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Animação suave na cor */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #354f52; /* Muda a cor ao passar o mouse */
+  }
+  
