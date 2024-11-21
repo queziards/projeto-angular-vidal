@@ -1,0 +1,43 @@
+<mat-sidenav-container class="principal-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Meu Perfil</mat-panel-title>
+        </mat-expansion-panel-header>
+        <a mat-list-item href="#">Meus dados</a>
+        <a mat-list-item href="#">Configurações de Pagamento</a>
+      </mat-expansion-panel>
+    </mat-nav-list>
+
+    <mat-nav-list>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Gestão de Pedidos</mat-panel-title>
+        </mat-expansion-panel-header>
+        <a mat-list-item href="#">Lista de Pedidos</a>
+        <a mat-list-item href="#">Pedidos Recentes</a>
+        <a mat-list-item href="#">Detalhe do Pedido</a>
+        <a mat-list-item href="#">Alerta de Estoque</a>
+      </mat-expansion-panel>
+    </mat-nav-list>
+
+    <mat-nav-list>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Gestão de Produtos</mat-panel-title>
+        </mat-expansion-panel-header>
+        <a mat-list-item href="#">Adicionar novo produto</a>
+        <a mat-list-item href="/listar-produtos">Listar Produto</a>
+      </mat-expansion-panel>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button (click)="sidenav.toggle()" aria-label="Toggle sidenav">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+  
