@@ -1,0 +1,142 @@
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  .search-bar {
+    width: 50%;
+    max-width: 600px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+.header-green {
+    background-color: #84a98c; /* Cor verde do Material Design */
+    color: white; /* Cor do texto para contraste */
+  }
+  
+mat-menu {
+    font-size: 14px;
+}
+button, a {
+    margin-left: 10px;
+    color: rgb(10, 10, 10);
+}
+.image-container {
+    text-align: center; /* Centraliza a imagem */
+    margin: 20px 0; /* Adiciona espaço acima e abaixo da imagem */
+  }
+  
+  .responsive-image {
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-container {
+    height: 100vh;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .main-content {
+    padding: 16px;
+  }
+  
+  
+  /*------------------------*/
+  .titulo{
+    margin-right: 10px;
+  }
+  .container-conteudo{
+    background-color: pink;
+  }
+
+
+/*****/
+.custom-button {
+    margin-right: 5px;  /* Espaçamento entre os botões */
+    border-radius: 8px;  /* Deixa os botões mais arredondados */
+    padding: 8px 16px;   /* Adiciona mais espaço interno */
+    display : flex;
+    flex-direction : coluna;
+    align-items : center;
+    width: 50%;
+
+}
+
+.custom-button-menor{
+    margin-right: 5px;  /* Espaçamento entre os botões */
+    border-radius: 8px;  /* Deixa os botões mais arredondados */
+    padding: 8px 16px;   /* Adiciona mais espaço interno */
+    display : flex;
+    flex-direction : coluna;
+    align-items : center;
+    width: 15%;
+}
+.custom-button-medio{
+    margin-left: 5px;  /* Espaçamento entre os botões */
+    border-radius: 8px;  /* Deixa os botões mais arredondados */
+    padding: 8px 16px;   /* Adiciona mais espaço interno */
+    display : flex;
+    flex-direction : column;
+    align-items : right;
+    width: 22%;
+}
+
+.custom-button-medio-qtde{
+    display: flex; /* Permite que os botões fiquem lado a lado */
+    justify-content: space-between; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaçamento acima do contêiner de botões */ 
+}
+
+.button-container {
+    margin-inline-end: auto;
+    margin-top: 20px;  
+    color: white;
+}
+
+
+.custom-button-preco{
+    margin-right: 10px;  /* Espaçamento entre os botões */
+    border-radius: 8px;  /* Deixa os botões mais arredondados */
+    padding: 8px 16px;   /* Adiciona mais espaço interno */;   
+    width: 20%;
+    height: 15%;
+}
+
+
+/*botao cadastrar produto*/
+.button-add{
+  color:white;
+  background-color:#84a98c;
+  
+}
+
+ .botao {
+ display: flex;
+ padding-bottom: 10px;
+ margin-right: 2px;
+ } 
