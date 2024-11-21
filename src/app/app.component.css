@@ -1,131 +1,75 @@
-.example-spacer {
-  flex: 1 1 auto;
+
+html, body {
+  margin: 0;
+  height: 100%; /* Garante que a altura da página seja 100% */
 }
-mat-toolbar { /*categorias, oferta do dia etc*/
+.container-all{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* Faz com que a página ocupe toda a altura da tela */
 }
-
-#menuap{ /*categoria*/
-  font-size: 16px;
+.example-spacer {
+    flex: 1 1 auto;
 }
-
 .logo {
-  margin-right: 25px;
+    margin-right: 25px;
+    height: 60%;
+    
 }
-
-.spacer {
-  flex: 1;
-}
-
+  
 .search-bar { /*caixa de pesquisar*/
-  margin-top: 20px;
-  width: 50%;
-  max-width: 600px;
+    margin-top: 20px;
+    width: 50%;
+    max-width: 600px;
 }
-
-button {
-  margin-left: 10px;
-}
-
 .header-green {
-  background-color: #84a98c; /* Cor verde do Material Design */
-  color: white; /* Cor do texto para contraste */
+  font-size: 15px;
+   justify-content: space-evenly;
+    background-color: #84a98c; /* Cor verde do Material Design */
+    color: white; /* Cor do texto para contraste */
 }
-
+  
 mat-menu {
-  font-size: 14px;
+    font-size: 14px;
 }
 button, a {
-  margin-left: 10px;
-  color: rgb(10, 10, 10);
-}
-.image-container {
-  text-align: center; /* Centraliza a imagem */
-  margin: 20px 0; /* Adiciona espaço acima e abaixo da imagem */
+    margin-left: 10px;
+    color: rgb(10, 10, 10);
 }
 
-.responsive-image {
-  max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-}
-
-
-
-
-.picsum-img-wrapper {
-  height: 400px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.picsum-img-wrapper img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-
-
-
-/* app.component.css */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-  gap: 16px; /* Espaçamento entre itens */
-}
-
-.grid-item {
-  position: relative;
-}
-
-.grid-item img {
-  width: 20%;
-  height: auto;
-}
-
-.caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 8px;
-  text-align: center;
+#menuap{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #84a98c;
+   position: relative;  /* Deixa o footer em sua posição natural */
+    width: 100%; /* O footer ocupa toda a largura da página */
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os itens */
+    margin-top: 100px;
 }
-
+  
 .spacer {
-  flex: 1 1 auto;
+    flex: 1;
 }
-
-mat-toolbar a {
-  color: white;
-  text-decoration: none;
+  
+footer {
+   position: relative; /* Mantém o footer na posição normal */
+    width: 100%; /* O footer ocupa toda a largura da página */
+    padding: 10px;
 }
-
-mat-toolbar a:hover {
-  text-decoration: underline;
+  
+.spacer {
+    flex: 1 1 auto; /* Deixa os itens nas extremidades */
 }
-
-mat-icon {
-  font-size: 24px;
+  
+.footer {
+    display: flex; /* Exibe o footer como flex container */
+    justify-content: space-between; /* Espaçamento entre os itens */
+}
+span{
+font-size: 15px;
 }

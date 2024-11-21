@@ -1,80 +1,76 @@
 <!--começo da navbar com material-->
-<div class="container-nav">
- 
-  <mat-toolbar  class="header-green">
-   <!-- Logo -->
-   <a href="#" class="logo">
-     <img src="../assets/header.jpeg" alt="Logo" height="40">
-   </a>
- 
-   <!-- Espaçador para empurrar a busca para o centro -->
-   <span class="spacer"></span>
- 
-   <!-- Campo de Pesquisa -->
-   <mat-form-field appearance="outline" class="search-bar">
-     <mat-label>Pesquisar</mat-label>
-     <input matInput placeholder="Buscar produtos, marcas e muito mais">
-     <button mat-icon-button matSuffix>
-       <mat-icon>search</mat-icon>
-     </button>
-   </mat-form-field>
- 
-   <!-- Espaçador para empurrar os ícones para o lado direito -->
-   <span class="spacer"></span>
- 
-   <!-- Ícones de Usuário e Carrinho -->
-   <button mat-icon-button [matMenuTriggerFor]="userMenu">
-     <mat-icon>account_circle</mat-icon>
-   </button>
-   <mat-menu #userMenu="matMenu">
-     <a routerLink="/login-usuario">Login</a>
-     <a mat-menu-item >Vender</a>
-     <a mat-menu-item >Ajuda</a>
-   </mat-menu>
- 
-   <button mat-icon-button>
-     <mat-icon>shopping_cart</mat-icon>
-   </button>
-  </mat-toolbar>
-  <!--segunda barra de nav-->
-  <mat-toolbar  class="header-green">
-   <a mat-menu-button [matMenuTriggerFor]="appMenu" id="menuap">Categorias</a>
-   <a mat-button>Ofertas do Dia</a>
-   <a mat-button>Contato</a>
-  </mat-toolbar>
- </div>
 
-<mat-menu #appMenu="matMenu">
-  <button mat-menu-item>Blusas</button>
-  <button mat-menu-item>Calças</button>
-  <button mat-menu-item>Eletronico</button>
-  <button mat-menu-item>Cama & Banho</button>
-  <button mat-menu-item>Brinquedos</button>
-</mat-menu>
+<div class="container-all">
+   <div class="container-nav">
+       <mat-toolbar  class="header-green">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img src="../../assets/header.png" alt="Logo" height="40">
+        </a>
+        <!-- Espaçador para empurrar a busca para o centro -->
+        <span class="spacer"></span>
+      
+        <!-- Campo de Pesquisa -->
+        <mat-form-field appearance="outline" class="search-bar">
+          <mat-label id="butt">Pesquisar</mat-label>
+          <input matInput placeholder="Buscar produtos, marcas e muito mais">
+          <button mat-icon-button matSuffix id="butt">
+            <mat-icon>search</mat-icon>
+          </button>
+        </mat-form-field>
+      
+        <!-- Espaçador para empurrar os ícones para o lado direito -->
+        <span class="spacer"></span>
+      
+        <!-- Ícones de Usuário e Carrinho -->
+        <button mat-icon-button [matMenuTriggerFor]="userMenu" id="butt">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu">
+          <a mat-menu-item routerLink="/login-usuario">Login</a><br>
+          <a mat-menu-item routerLink="/admin">Admin</a>
+          <a mat-menu-item routerLink="/adicionar-produto">Cadastrar Produto</a>
 
-<!--carrosel com brootstrap------------------------>
-<ngb-carousel *ngIf="images">
-  <ng-template ngbSlide *ngFor="let img of images; let i = index">
-    <div class="picsum-img-wrapper">
-      <img [src]="img" alt="Random slide {{ i }}">
+        </mat-menu>
+      
+        <button mat-icon-button id="butt">
+          <mat-icon>shopping-cart</mat-icon>
+        </button>
+       </mat-toolbar>
+       <!--segunda barra de nav-->
+       <mat-toolbar  class="header-green">
+        <a mat-menu-button [matMenuTriggerFor]="appMenu" id="menuap">Categorias</a>
+        <a mat-button>Ofertas do Dia</a>
+        <a mat-button>Contato</a>
+       </mat-toolbar>
+  </div>
+     
+  <div>
+     <mat-menu #appMenu="matMenu">
+       <button mat-menu-item>Blusas</button>
+       <button mat-menu-item>Calças</button>
+       <button mat-menu-item>Eletronico</button>
+       <button mat-menu-item>Cama & Banho</button>
+       <button mat-menu-item>Brinquedos</button>
+     </mat-menu>
     </div>
-  </ng-template>
-</ngb-carousel>
-<!---fim do carrosel-->
+   
 
-<!-- Footer -->
-<mat-toolbar color="primary" class="footer">
-  <span>© 2024 Ecommerce</span>
-  <span class="spacer"></span>
-  <!-- Links -->
-  <a href="#" mat-button>Suporte</a>
-  <a href="#" mat-button>Ajuda</a>
-  <a href="#" mat-button>Contato</a>
-  <span class="spacer"></span>
+<router-outlet></router-outlet>
 
-</mat-toolbar>
+  <!--<mat-toolbar style="background-color:#84a98c;" class="footer">
+    <span>© 2024 MyEcommerce</span>
+    <span class="spacer"></span>
+    <a mat-button href="#">Suporte</a>
+    <a mat-button href="#">Contato</a>
+    <a mat-icon-button href="#">
+      <mat-icon>facebook</mat-icon>
+    </a>
+    <a mat-icon-button href="#">
+      <mat-icon>instagram</mat-icon>
+    </a>
+  </mat-toolbar>
 
-
-<app-root>
-  <router-outlet></router-outlet>
-</app-root>
+</div>--->
+   
+<!--<app-home></app-home>-->

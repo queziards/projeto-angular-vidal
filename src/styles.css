@@ -45,6 +45,9 @@ button, a {
     max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
   }
+
   
+
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
